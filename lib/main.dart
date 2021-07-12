@@ -9,16 +9,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: false,
         title: 'Animações de Texto',
         theme: ThemeData(primarySwatch: Colors.blue),
-        home: MaterialHomePage()
-    );
+        home: MaterialHomePage());
   }
 }
 
 class MaterialHomePage extends StatelessWidget {
-
   static const colorizeColors = [
     Colors.purple,
     Colors.blue,
@@ -42,14 +40,14 @@ class MaterialHomePage extends StatelessWidget {
           color: Colors.amber,
           child: Center(
             child: AnimatedTextKit(
-                animatedTexts: [
-                  RotateAnimatedText('AWESOME'),
-                  RotateAnimatedText('OPTIMISTIC'),
-                  RotateAnimatedText('DIFFERENT'),
-                ],
-                onTap: () {
-                  print("Tap Event");
-                },
+              animatedTexts: [
+                RotateAnimatedText('AWESOME'),
+                RotateAnimatedText('OPTIMISTIC'),
+                RotateAnimatedText('DIFFERENT'),
+              ],
+              onTap: () {
+                print("Tap Event");
+              },
             ),
           ),
         ),
@@ -83,20 +81,20 @@ class MaterialHomePage extends StatelessWidget {
           child: Center(
             child: DefaultTextStyle(
               style: const TextStyle(
-              fontSize: 30.0,
-              fontFamily: 'Agne',
-            ),
-            child: AnimatedTextKit(
-              animatedTexts: [
-                TyperAnimatedText('Euristenede Santos'),
-                TyperAnimatedText('Eu sou Cientista!!!'),
-                TyperAnimatedText('Eu sou Software Developer!!'),
-                TyperAnimatedText('Eu sou Mobile Developer!!!'),
-              ],
-              onTap: () {
-                print("Tap Event");
-              },
-            ),
+                fontSize: 30.0,
+                fontFamily: 'Agne',
+              ),
+              child: AnimatedTextKit(
+                animatedTexts: [
+                  TyperAnimatedText('Euristenede Santos'),
+                  TyperAnimatedText('Eu sou Cientista!!!'),
+                  TyperAnimatedText('Eu sou Software Developer!!'),
+                  TyperAnimatedText('Eu sou Mobile Developer!!!'),
+                ],
+                onTap: () {
+                  print("Tap Event");
+                },
+              ),
             ),
           ),
         ),
@@ -163,7 +161,7 @@ class MaterialHomePage extends StatelessWidget {
               waveColor: Colors.blueAccent,
               boxBackgroundColor: Colors.redAccent,
               textStyle: TextStyle(
-                fontSize: 80.0,
+                fontSize: 50.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -221,4 +219,3 @@ class MaterialHomePage extends StatelessWidget {
     );
   }
 }
-
